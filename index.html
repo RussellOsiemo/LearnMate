@@ -5,42 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+    <link rel="javascript" href="js/nav.js">
     <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css">
         <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
         <link rel="stylesheet" href="font-awesome-4.7.0\fonts">
-        <link rel="stylesheet" href="font-awesome-4.7.0">
+        <link rel="stylesheet" href="fonts">
     <title>LearnMate</title>
     <div class="nav">
         <nav>
+            <!-- <i class="fa fa-times" onClick="hidemenu()" id="navLinks"></i> -->
             <ul>
-                <li>
-                <form class="searchfield" action="" method="">
-                <input type="text" placeholder="Search...">
-                <button type="submit"> <i class="fa fa-search" ></i></button>
-                </form>
-            </li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="index.html">Subject</a></li>
+                <li><a href="index.html">Register</a></li>
+                <li><a href="index.html">Post Assignment</a></li>
+                <li><a href="index.html">Ask Question</a></li>
+                <li><a href="index.html">New</a></li>
+                
+                <!-- make this an image that dropdowns account actions  -->
+                <li><a href=""><img src="images/nightking.jpg" alt=""></a></li> 
+            
+             
             </ul>
+            <!-- <i class="fa fa-bars" onClick="showmenu()"> </i> -->
+              <!-- search bar -->
+         <div class="searchbar">
+             
+         <i  class="fa fa-search"></i> 
+        <input  placeholder="" type="search"  >
+       </div>
         </nav>
 
     </div>
+ 
       <!-- sidebar -->
-  <div class="sidebar">
+  <div class="sidebar" style="height: 100000px;">
+    <a href="#" class="active">Account</a>
+    <a href="#" class="active">Payment</a>
+    <a href="#" class="active">Answer Question</a>
+    <a href="#" class="active">Subject Progress</a>
+    <a href="#" class="active">Home</a>
+    <a href="#" class="active">Assignment</a>
+    <a href="#" class="active">Something</a>
+    <a href="#" class="active">Else</a>
     <a href="#" class="active">Home</a>
     <a href="#" class="active">Assignment</a>
     <a href="#" class="active">Something</a>
     <a href="#" class="active">Else</a>
 
-</div> 
+</div>
 </head>
 <body>
-  
+
   <!-- Page content -->
-<div class="content">
-    ..
-  </div> 
+
+
+
+<!-----Javascript for toggle menu---->
+<script type="text/javascript">
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right="0";
+    }
+      function hidemenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
 </body>
 </html>

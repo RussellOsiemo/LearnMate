@@ -10,23 +10,26 @@ body{
 }
 nav{
     flex-direction: row;
-    background:transparent;
-    margin-left: 150px;
-     padding: 2% 6%; 
+    background:blueviolet;
+    margin-left: 120px;
+     /* padding: 2% 6%;  */
     justify-content: space-between;
+    height: 40px;
+   position: fixed;
     
 }
+
 nav ul {
     box-shadow: none;
     text-decoration: none;
     width: 100%;
-    height: 20vh;
     margin-top: 0;
     padding:30px;
     display: flex;
     flex-direction: row;
     list-style: none;
-
+    margin-right: 45px;
+    margin-left: 45px;
 }
 nav ul li{
     padding-left: 30px;
@@ -37,45 +40,59 @@ nav ul li a{
     text-decoration: none;
     color: #000;
 }
-form .searchfield{
-    border-radius: 5px 0 0 5px;
-    width: 80%;
-    background: #f1f1ff;
-    padding-right: 60px;
+/* styling for the user profile picture */
+nav ul li img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    /*try with  padding-right: 20px; or more wierd cool looking shape*/
+    padding-right: 20px;
 }
-form .searchfield button{
-    padding: 5px;
-    background: #000;
-    width: 20%;
-    height: 20px;
-    float: left;
-    color: white;
-    font-size: 15px;
-    border: 1px solid gray;
-    cursor: pointer;
-    border-left: none;
+.searchbar{
+   width: 500px;
+   height: 20px;
+   border-radius: 50px;
+   display: flex;
+   margin-left: 15%;
+   background-color: #d9e3e5;
+   align-items: center ; 
+   padding:20px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.searchbar:focus{
+    width: 100%;
+    box-shadow: 10px solid #777;
+}
+.searchbar i{
+   font-size: 20px;
+   color: #777;
+   cursor: pointer; 
+}
+.searchbar input{
+    flex: 1;
+    height:30px ;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding-left: 10x;
+    background-color: #d9e3e5;
+}
 
-}
-form .searchfield button:hover{
-background: rgb(252, 249, 249);
-color: #000;
-}
-nav ul li i{
-    width: 12px;
-    height: 20px;
-    color: #000;
-    padding-right: 5px;
-
-}
 /* The side navigation menu */
 .sidebar{
     margin-top:0;
     padding: 0;
     width: 200px;
+    margin-left: 0;
     background: transparent;
     position: fixed;
-    height: 100%;
+    margin-bottom: -5000px; /* any large number will do */
+  padding-bottom: 5000px; 
     overflow: auto;
+    border-radius: 5px ;
+    box-shadow: 3px  gray;
+    height: 100vh;
 }
 /* sidebar links */
 .sidebar a{
@@ -96,9 +113,9 @@ nav ul li i{
 
 }
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
+.body-content{
     margin-left: 200px;
-    padding: 1px 16px;
+    margin-top: 700px;
     height: 1000px;
   }
   
@@ -114,10 +131,21 @@ div.content {
   }
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 700px) {
+      *{
+          font-size: 20px;
+          
+      }
+      .sidebar{
+          width: 150px;
+      }
     .sidebar a {
       text-align: center;
       float: none;
+
+    }
+    nav{
+        margin-left: 150px;
     }
   }
  
