@@ -5,22 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-    <link rel="javascript" href="js/nav.js">
+    <!-- <link rel="javascript" href="js/modal.js"> -->
     <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css">
         <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
         <link rel="stylesheet" href="font-awesome-4.7.0\fonts">
         <link rel="stylesheet" href="fonts">
-    <title>LearnMate</title>
-    <div class="nav">
-        <nav>
+        <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <nav >
             <!-- <i class="fa fa-times" onClick="hidemenu()" id="navLinks"></i> -->
             <ul>
                 
-                <li><a href="index.html">Subject</a></li>
+                <li><a href="index.html" data-toggle="modal">Subject</a></li>
+                <!-- modal  -->
                 <li><a href="index.html">Register</a></li>
                 <li><a href="index.html">Post Assignment</a></li>
                 <li><a href="index.html">Ask Question</a></li>
+                <li><a href="index.html">Post Document</a></li>
+                <li><a href="index.html">Forums</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Reference</button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div>
+                </li>
                 <li><a href="index.html">New</a></li>
+                <li><a href="index.html">Login</a></li>
                 
                 <!-- make this an image that dropdowns account actions  -->
                 <li><a href=""><img src="images/nightking.jpg" alt=""></a></li> 
@@ -29,37 +43,56 @@
             </ul>
             <!-- <i class="fa fa-bars" onClick="showmenu()"> </i> -->
               <!-- search bar -->
+              <h1 style="font-family: monospace; color:blueviolet; text-align:center; font-size:23px bold;  ">Learnmate 🎓 &COPY;</h1>
          <div class="searchbar">
-             
-         <i  class="fa fa-search"></i> 
+              <i  class="fa fa-search"></i> 
         <input  placeholder="" type="search"  >
        </div>
         </nav>
-
     </div>
+    <title>LearnMate</title>
+    
  
-      <!-- sidebar -->
-  <div class="sidebar" style="height: 100000px;">
-    <a href="#" class="active">Account</a>
-    <a href="#" class="active">Payment</a>
-    <a href="#" class="active">Answer Question</a>
-    <a href="#" class="active">Subject Progress</a>
-    <a href="#" class="active">Home</a>
-    <a href="#" class="active">Assignment</a>
-    <a href="#" class="active">Something</a>
-    <a href="#" class="active">Else</a>
-    <a href="#" class="active">Home</a>
-    <a href="#" class="active">Assignment</a>
-    <a href="#" class="active">Something</a>
-    <a href="#" class="active">Else</a>
 
-</div>
 </head>
 <body>
 
   <!-- Page content -->
+ <section class="page-content">
+ <p>
+    Welcome to Learnmate an open forum aimed at providing answers to your student and professional 
+    questions from other people on the platform helping you get a satisfying answer to your problem from a pool of like minded people
+      You can get your assignment done today and meet the deadline with satsfying results.You can also use this forum as a 
+      refrence point for questions and have a large repository of articles on your topics of interests.
 
-
+    </p>
+ 
+</section>
+<section class="display-cards">
+    <div>
+        <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="true" href="#">Assingment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reference</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" tabindex="-1" aria-disabled="false">Post Resource</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      
+    </div>
+</section>
 
 <!-----Javascript for toggle menu---->
 <script type="text/javascript">
