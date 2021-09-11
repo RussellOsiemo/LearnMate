@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="cards.css">
     <!-- <link rel="javascript" href="js/modal.js"> -->
     <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css">
         <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
@@ -12,12 +13,11 @@
         <link rel="stylesheet" href="fonts">
         <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        <nav >
-            <!-- <i class="fa fa-times" onClick="hidemenu()" id="navLinks"></i> -->
-            <ul>
-                
-                <li><a href="index.html" data-toggle="modal">Subject</a></li>
-                <!-- modal  -->
+         <nav>
+           <div class="mynav" id="navlink">
+         <ul>
+           <i class="fa fasicon fa-times" onclick="hideMenu()" ></i>
+                 <li><a href="index.html">Subject</a></li>
                 <li><a href="index.html">Register</a></li>
                 <li><a href="index.html">Post Assignment</a></li>
                 <li><a href="index.html">Ask Question</a></li>
@@ -27,28 +27,28 @@
                     <div class="dropdown">
                         <button class="dropbtn">Reference</button>
                         <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
+                          <a href="#">Word Document</a>
+                          <a href="#">Video</a>
+                          <a href="#">Audio File</a>
+                          <a href="#">Link To External Source</a>
                         </div>
                       </div>
                 </li>
                 <li><a href="index.html">New</a></li>
                 <li><a href="index.html">Login</a></li>
-                
-                <!-- make this an image that dropdowns account actions  -->
-                <li><a href=""><img src="images/nightking.jpg" alt=""></a></li> 
-            
              
+                <li><a href=""><img src="images/nightking.jpg" alt=""></a></li> 
             </ul>
-            <!-- <i class="fa fa-bars" onClick="showmenu()"> </i> -->
-              <!-- search bar -->
-              <h1 style="font-family: monospace; color:blueviolet; text-align:center; font-size:23px bold;  ">Learnmate 🎓 &COPY;</h1>
+       
+              <h1 class="heading" >Learnmate 🎓 &COPY;</h1>
          <div class="searchbar">
               <i  class="fa fa-search"></i> 
-        <input  placeholder="" type="search"  >
+        <input  placeholder="" type="search"  class="searchinput" >
        </div>
-        </nav>
+       
+      </div>
+      <i class="fa fasicone fa-bars" id="bar" onclick="showMenu()"></i>
+        </nav> 
     </div>
     <title>LearnMate</title>
     
@@ -69,39 +69,197 @@
  
 </section>
 <section class="display-cards">
-    <div>
+    <center><h1>HTML</h1></center>
+    <p>Simple formatting of components in a webpage To create a webpage with content for display.</p>
+    <div class="home-cards">
         <div class="card text-center">
             <div class="card-header">
               <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="true" href="#">Assingment</a>
+                  <a class="nav-link active" aria-current="true" href="reference.html" style="color:black; font-family:monospace;">Reference</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Reference</a>
+                  <a class="nav-link" href="assignment.html" style="color:black; font-family:monospace;">Post Assignment</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="#" tabindex="-1" aria-disabled="false">Post Resource</a>
+                  <a class="nav-link " href="resources.html" tabindex="-1" aria-disabled="false" style="color:black; font-family:monospace;">Post Resource</a>
                 </li>
               </ul>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Learn HTML</h5>
+              <p class="card-text">Learn HTML from Scratch and work youy way to frontend website development.</p>
+              <a href="#" class="btn btn-danger">Begin HTML</a>
             </div>
           </div>
       
     </div>
 </section>
+<section class="display-cards">
+    <center><h1>Cascading Styling-sheet (CSS)</h1></center>
+    <p>Style components in a website page to give an attractive view to users.</p>
+    <div class="home-cards">
+        <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="true" href="reference.html" style="color:black; font-family:monospace;">Reference</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="assignment.html" style="color:black; font-family:monospace;">Post Assignment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="resources.html" tabindex="-1" aria-disabled="false" style="color:black; font-family:monospace;">Post Resource</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Learn CSS</h5>
+              <p class="card-text">Learn CSS and design an attractive website using different styles.</p>
+              <a href="#" class="btn btn-info">Begin CSS</a>
+            </div>
+          </div>
+      
+    </div>
+</section>
+<section class="display-cards">
+ <center><h1>Javascript</h1></center>
+ <p>Learn Javascript for responsive websites.</p>
+  <div class="home-cards">
+      <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                  <!-- link to Javascript -->
+                <a class="nav-link active" aria-current="true" href="reference.html" style="color:black; font-family:monospace;">Reference</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assignment.html" style="color:black; font-family:monospace;">Post Assignment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="resources.html" tabindex="-1" aria-disabled="false" style="color:black; font-family:monospace;">Post Resource</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Learn Javascript</h5>
+            <p class="card-text">Together with HTML and CSS, Javascript is an ideal tool for your responsive webpage with 
+                animation features making your website as possible.With Javascript as one of the most growing languages in 
+              programming it is a must have.</p>
+            <a href="#" class="btn btn-success">Begin Here</a>
+          </div>
+        </div>
+    
+  </div>
+</section>
+<section class="display-cards">
+  <p>Learn Introduction To Programming </p>
+  <center><h1>Learn Introduction To Programming.</h1></center>
+  <div class="home-cards">
+      <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                  <!-- link to Javascript -->
+                <a class="nav-link active" aria-current="true" href="reference.html" style="color:black; font-family:monospace;">Reference</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assignment.html" style="color:black; font-family:monospace;">Post Assignment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="resources.html" tabindex="-1" aria-disabled="false" style="color:black; font-family:monospace;">Post Resource</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Learn Assembly Language </h5>
+            <p class="card-text">Assembly Language helps most of electronic devices communicate as it is the closest language that 
+              communicates with the machine directly.Learn operation codes from design models  like the Intel 8085 and their operational 
+              details.
+            </p>
+            <a href="#" class="btn btn-success">Begin Here</a>
+          </div>
+        </div>
+    
+  </div>
+</section>
+<section class="display-cards">
+    <p>Learn Assembly Language today</p>
+    <center><h1>Assembly Language 👨‍💻</h1></center>
+    <div class="home-cards">
+        <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <!-- link to Javascript -->
+                  <a class="nav-link active" aria-current="true" href="reference.html" style="color:black; font-family:monospace;">Reference</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="assignment.html" style="color:black; font-family:monospace;">Post Assignment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="resources.html" tabindex="-1" aria-disabled="false" style="color:black; font-family:monospace;">Post Resource</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Learn Assembly Language </h5>
+              <p class="card-text">Assembly Language helps most of electronic devices communicate as it is the closest language that 
+                communicates with the machine directly.Learn operation codes from design models  like the Intel 8085 and their operational 
+                details.
+              </p>
+              <a href="#" class="btn btn-success">Begin Here</a>
+            </div>
+          </div>
+      
+    </div>
+</section>
+<section class="display-cards">
+    <p>Data communication, the transfer of information from one place to another with the use of networks laid in place.</p>
+    <center><h1>Data Communcation 🛰</h1></center>
+    <div class="home-cards">
+        <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <!-- link to Data communication -->
+                  <a class="nav-link active" aria-current="true" href="reference.html" style="color:black; font-family:monospace;">Reference</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="assignment.html" style="color:black; font-family:monospace;">Post Assignment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="resources.html" tabindex="-1" aria-disabled="false" style="color:black; font-family:monospace;">Post Resource</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Learn Data Communications</h5>
+              <p class="card-text">Learn Data Communication topics like network, network layout , Topology ,the Internet with guided approach
+                  as directed by Computer Science course outline.</p>
+              <a href="#" class="btn btn-success">Begin Here</a>
+            </div>
+          </div>
+      
+    </div>
+</section>
+<section class="footer">
+    <footer>
+      <p style="margin-top: 2px;">All Rights Reserved  &COPY; 2021</p><br>
+      <p style="margin-top: 2px;">This is a student Website aimed at ensuring availability of resources for students and also proffesional</p><br>
+      <span style="margin-top: 2px;">A Product of Maseno University,Kisumu Kenya.</span>
 
+    </footer>
+</section>
 <!-----Javascript for toggle menu---->
 <script type="text/javascript">
-    var navLinks = document.getElementById("navLinks");
+    var bar = document.getElementById("bar");
     function showmenu(){
-        navLinks.style.right="0";
+        bar.style.left="0";
     }
+    var times = document.getElementById("navlink");
       function hidemenu(){
-        navLinks.style.right="-200px";
+        times.style.left="-200px";
     }
 </script>
 </body>
